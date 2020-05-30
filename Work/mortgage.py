@@ -27,7 +27,8 @@ while principal > 0:
         total_paid += principal
         principal += abs(principal)
 
-    print(months, round(total_paid, 2), round(principal, 2))
+    #print(months, round(total_paid, 2), round(principal, 2))
+    print(f'Month: {months}', f'Total Paid: {total_paid:0.2f}', f'Remaining Principal: {principal:0.2f}')
 
 print('Total paid', round(total_paid, 2))
 print('Total months', months)
