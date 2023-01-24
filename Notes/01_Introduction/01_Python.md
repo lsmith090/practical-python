@@ -61,7 +61,7 @@ will be able to use it everywhere else.
 
 ### Exercise 1.1: Using Python as a Calculator
 
-On your machine, start Python and use it as a calulator to solve the
+On your machine, start Python and use it as a calculator to solve the
 following problem.
 
 Lucky Larry bought 75 shares of Google stock at a price of $235.14 per
@@ -145,6 +145,11 @@ the class by typing in code slowly and thinking about it--not cut and pasting.
 
 ### Exercise 1.4: Where is My Bus?
 
+Note: This was a whimsical example that was a real crowd-pleaser when
+I taught this course in my office.  You could query the bus and then
+literally watch it pass by the window out front.  Sadly, APIs rarely live
+forever and it seems that this one has now ridden off into the sunset. --Dave
+
 Try something more advanced and type these statements to find out how
 long people waiting on the corner of Clark street and Balmoral in
 Chicago will have to wait for the next northbound CTA \#22 bus:
@@ -168,6 +173,10 @@ extracted some useful information in about 6 lines of code. The data
 you accessed is actually feeding the website
 <http://ctabustracker.com/bustime/home.jsp>. Try it again and watch
 the predictions change.
+
+Note: This service only reports arrival times within the next 30 minutes.
+If you're in a different timezone and it happens to be 3am in Chicago, you
+might not get any output.  You use the tracker link above to double check.
 
 If the first import statement `import urllib.request` fails, you’re
 probably using Python 2. For this course, you need to make sure you’re

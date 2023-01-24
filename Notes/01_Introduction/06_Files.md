@@ -136,8 +136,8 @@ To read a file line-by-line, use a for-loop like this:
 
 ```python
 >>> with open('Data/portfolio.csv', 'rt') as f:
-    for line in f:
-        print(line, end='')
+        for line in f:
+            print(line, end='')
 
 name,shares,price
 "AA",100,32.20
@@ -220,13 +220,16 @@ Try it:
 
 ```python
 >>> import gzip
->>> with gzip.open('Data/portfolio.csv.gz') as f:
+>>> with gzip.open('Data/portfolio.csv.gz', 'rt') as f:
     for line in f:
         print(line, end='')
 
 ... look at the output ...
 >>>
 ```
+
+Note: Including the file mode of `'rt'` is critical here.  If you forget that,
+you'll get byte strings instead of normal text strings.
 
 ### Commentary:  Shouldn't we being using Pandas for this?
 
